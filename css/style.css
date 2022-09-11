@@ -91,7 +91,7 @@ a{
 }
 
 .col-left, .col-right, .center{
-    width: 28%;
+    width: 25%;
     margin: 10px;
     padding: 10px;
     float: left;
