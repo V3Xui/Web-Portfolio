@@ -14,6 +14,10 @@ body{
     background: linear-gradient(360deg, rgba(0,0,0,1) 0%, rgba(5,50,61,1) 25%, rgba(61,73,65,1) 50%, rgba(130,136,108,1) 100%);
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 header, nav, footer, section, main{
     display: block;
 }
@@ -86,16 +90,9 @@ a{
     width: 200px;
 }
 
-.col-left, .col-right{
-    width: 45%;
+.col-left, .col-right, .center{
+    width: 28%;
     margin: 10px;
     padding: 10px;
-}
-
-.col-left{
     float: left;
-}
-
-.col-right{
-    float: right;
 }
