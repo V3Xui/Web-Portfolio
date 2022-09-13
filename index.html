@@ -11,48 +11,67 @@
 
 <body>
     <nav class="fixed-nav" id="nav">
-        <h1><a href="index.html">Logo</a></h1>
+        <h1 class="header-logo"><a href="index.html">Logo</a></h1>
         <div class="nav">
             <ul class="nav-list">
-                <li class="nav-item"><a href="">Get In Touch</a></li>
-                <li class="nav-item"><a href="">About Me</a></li>
-                <li class="nav-item"><a href="">Projects</a></li>
-                <li class="nav-item"><a href="#skill">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Get In Touch</a></li>
+                <li class="nav-item"><a class="nav-link" href="">About Me</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
             </ul>
         </div>
     </nav>
     <main>
+        <!-- Header Start -->
         <header class="header-intro">
-            <div class="intro">
+            <div class="intro-left">
                 <h1>Jhon Melvin Dolot</h1>
-                <h2>Future Full Stack Developer</h2>
-                <p>Hi! My name is Melvin. I love building things from scratch</p>
+                <h2>Future Full Stack Web Developer</h2>
+                <p class="indent">
+                    Welcome to my Web Portfolio!, Hi! My name is Jhon Melvin. 
+                    I'm a Computer Engineering Technology student of
+                    Polytechnic University of the Philippines Sta Mesa.
+                </p>
+                <br>
+                <p class="indent">I'm a self-taught developer. I love building things from scratch.</p>
+                <br>
+                <li class="view-btn"><a href="#projects"><h3>View Projects</h3></a></li>
+            </div>
+            <div class="intro-right">
                 <img class="logo" src="images/logo.png" alt="picture ko">
             </div>
         </header>
-        <section class="prog-lang" id="skill">
+        <!-- Header End -->
+        <!-- Skill Start -->
+        <section class="skill" id="skillset">
             <h1>Skill Learned</h1>
             <br>
             <hr>
-            <div class="col-left">
-                <h2>Front-End</h2>
-                <img class="front" src="images/front.png" alt="">
-                <p>HTML, CSS, JavaScript, Bootstrap, JQuery</p>
+            <div class="col">
+                <div class="row">
+                    <h2>Front-End</h2>
+                    <img class="skills" src="images/front.png" alt="">
+                    <p>HTML, CSS, JavaScript, Bootstrap, JQuery</p>
+                </div>
+                <div class="row">
+                    <h2>Back-End</h2>
+                    <img class="skills" src="images/back.png" alt="">
+                    <p>PHP, MySQL</p>
+                </div>
+                <div class="row">
+                    <h2>Tools</h2>
+                    <img class="skills" src="images/tools.png" alt="">
+                    <p>MySQL Workbench, Visual Studio Code, Apache Netbeans, GIt Bash, Github,</p>
+                </div>
             </div>
-            <div class="center">
-                <h2>Back-End</h2>
-                <img class="back" src="images/back.png" alt="">
-                <p>PHP, MySQL</p>
-            </div>
-            <div class="col-right">
-                <h2>Tools</h2>
-                <img class="back" src="images/tools.png" alt="">
-                <p>MySQL Workbench, Visual Studio Code, Apache Netbeans, GIt Bash, Github,</p>
-            </div>
+            <hr>
         </section>
-        <section>
-
+        <!-- Skill End -->
+        <!-- Project Start -->
+        <section class="projects" id="projects">
+            
         </section>
+        <!-- Project End -->
+        <section></section>
         <section></section>
     </main>
     <footer>
