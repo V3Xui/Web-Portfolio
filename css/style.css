@@ -45,7 +45,7 @@ section{
 }
 
 .hidden{
-    /* display: none !important; */
+    display: none !important;
 }
 
 .main-content{
@@ -58,7 +58,7 @@ section{
     margin: auto;
 }
 
-.section .container{
+.container{
     padding-top: 60px;
     padding-bottom: 70px;
 }
@@ -127,6 +127,7 @@ section{
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
 
+/* Navigation Section Start */
 aside{
     background: white;
     color: black;
@@ -256,9 +257,9 @@ aside{
 .nav i{
     margin-right: 15px;
 }
+/* Navigation Section End */
 
-/* Secrtion Home */
-
+/* Home Start */
 .home{
     color: black;
     display: flex;
@@ -330,6 +331,7 @@ h3.my-profession{
     margin: auto;
     border-radius: 5px;
 }
+/* Home End */
 
 /* About Start */
 .about-content{
@@ -496,3 +498,63 @@ h3.my-profession{
     text-align: justify;
     color: gray;
 }
+/* About End */
+
+/* Learning Roadmap Start */
+.learn-map-item{
+    margin-bottom: 30px;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+}
+
+.learn-map-item-inner{
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 30px 15px;
+    text-align: center;
+    transition: all 0.5s ease;
+    height: 290px;
+}
+
+.learn-map-item-inner:hover{
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+
+.icon{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 30px;
+    transition: all 0.5s ease;
+}
+
+.icon i{
+    font-size: 40px;
+    line-height: 60px;
+    color: red;
+    transition: all 0.5s ease;
+}
+
+.learn-map-item-inner:hover .icon{
+    background: gray;
+}
+
+.learn-map-item-inner:hover .icon i{
+    font-size: 50px;
+    color: black;
+}
+
+.learn-map-item-inner h4{
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.learn-map-item-inner p{
+    font-size: 16px;
+    line-height: 25px;
+    color: gray;
+}
+/* Learning Roadmap End */
