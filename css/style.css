@@ -45,7 +45,7 @@ section{
 }
 
 .hidden{
-    display: none !important;
+/*     display: none !important; */
 }
 
 .main-content{
