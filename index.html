@@ -1,84 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="color-scheme" content="dark"> -->
+
+    <!-- CSS Files -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/color-change.css">
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+
     <title>Web Portfolio</title>
 </head>
-
 <body>
-    <nav class="fixed-nav" id="nav">
-        <h1 class="header-logo"><a href="index.html">Logo</a></h1>
-        <div class="nav">
-            <ul class="nav-list">
-                <li class="nav-item"><a class="nav-link" href="">Get In Touch</a></li>
-                <li class="nav-item"><a class="nav-link" href="">About Me</a></li>
-                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+    <!-- Main Container Start -->
+    <div class="main-container">
+        <!-- Aside Start -->
+        <aside>
+            <div class="logo">
+                <a href=""><span>V3X</span>ui</a>
+            </div>
+            <div class="nav-toggler">
+                <span></span>
+            </div>
+            <ul class="nav">
+                <li><a class="active" href=""><i class='bx bxs-home' ></i>Home</a></li>
+                <li><a href=""><i class='bx bxs-dashboard' ></i>Projects</a></li>
+                <li><a href=""><i class='bx bxs-user' ></i>About Me</a></li>
+                <li><a href=""><i class='bx bxs-phone' ></i>Get in Touch</a></li>
             </ul>
+        </aside>
+        <!-- Aside End -->
+        <!-- Main Content Start -->
+        <div class="main-content">
+            <!-- Home Start -->
+            <section class="home section hidden">
+                <div class="container">
+                    <div class="row">
+                        <div class="home-info">
+                            <h3 class="hello">Hello, my name is <span class="name">Jhon Melvin Dolot</span></h3>
+                            <h3 class="my-profession">I'm a <span class="typing">Future Web Developer</span></h3>
+                            <p>
+                                I'm a Computer Engineering Technology student of Polytechnic University of the Philippines Sta Mesa. 
+                                I'm a self-taught developer. I love building things from scratch.
+                            </p>
+                            <a href="#contact" class="hire-btn">Hire Me</a>
+                        </div>
+                        <div class="home-img">
+                            <img src="img/hehe.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Home End -->
+            <!-- About Start -->
+            <section class="about section">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>About Me</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="about-content padd-15">
+                            <div class="row">
+                                <div class="about-text padd-15">
+                                    <h3>I'm Jhon Melvin Dolot <span>Future Web Developer</span></h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Eligendi quibusdam mollitia sapiente iure sit aspernatur 
+                                        eveniet illo beatae vitae, quos aperiam consequatur 
+                                        laboriosam impedit animi fugiat labore ea quaerat 
+                                        voluptate!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="personal-info padd-15">
+                                    <div class="row">
+                                        <div class="info-item padd-15">
+                                            <p>Level : <span>21 (age)</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Email : <span><a href="mailto:dolotjhonmelvin@gmail.com" target="_blank">Click Here</a></span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Phone : <span>0915 675 5637</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Job : <span>Looking for Internship</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="buttons padd-15">
+                                            <a href="https://drive.google.com/file/d/12JkMNbScK01a3UUOBEZG1G97BeF6ORUd/view?usp=sharing" target="_blank" class="hire-btn">Download Résumé</a>
+                                            <a href="#contact" class="hire-btn">Hire Me</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skills padd-15">
+                                    <div class="row">
+                                        <div class="skill-item">
+                                            <h5>Front-End</h5>
+                                            <p>HTML  CSS  JavaScript</p>
+                                        </div>
+                                        <div class="skill-item">
+                                            <h5>Back-End</h5>
+                                            <p>PHP  MySQL</p>
+                                        </div>
+                                        <div class="skill-item">
+                                            <h5>Currently Learning</h5>
+                                            <p>JAVA  Python</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="education padd-15">
+                                    <h3 class="title">Education</h3>
+                                    <div class="row">
+                                        <div class="timeline-box padd-15">
+                                            <div class="timeline shadow-dark">
+                                                <!-- Timeline Items -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class='bx bx-calendar'></i>2018-2020
+                                                    </h3>
+                                                    <h4 class="timeline-title">Science, Technology, Engineering, & Mathematics (STEM)</h4>
+                                                    <p class="timeline-text">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                                        Natus modi fugit dicta quibusdam dolorum sunt voluptates ab, 
+                                                        reprehenderit maiores quod quae non odio. Nesciunt, omnis 
+                                                        cupiditate!
+                                                    </p>
+                                                </div>
+                                                <br>
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class='bx bx-calendar'></i>2020-2023
+                                                    </h3>
+                                                    <h4 class="timeline-title">Diploma in Computer Engineering Technology (DCET)</h4>
+                                                    <p class="timeline-text">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                                        Natus modi fugit dicta quibusdam dolorum sunt voluptates ab, 
+                                                        reprehenderit maiores quod quae non odio. Nesciunt, omnis 
+                                                        cupiditate!
+                                                    </p>
+                                                </div>
+                                                <br>
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class='bx bx-calendar'></i>2023-2025
+                                                    </h3>
+                                                    <h4 class="timeline-title">Bachelor of Science in Computer Engineering(BSCpE)</h4>
+                                                    <p class="timeline-text">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                                        Natus modi fugit dicta quibusdam dolorum sunt voluptates ab, 
+                                                        reprehenderit maiores quod quae non odio. Nesciunt, omnis 
+                                                        cupiditate!
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="education padd-15">
+                                    <h3 class="title">Certification</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- About End -->
         </div>
-    </nav>
-    <main>
-        <!-- Header Start -->
-        <header class="header-intro">
-            <div class="intro-left">
-                <h1>Jhon Melvin Dolot</h1>
-                <h2>Future Full Stack Web Developer</h2>
-                <p class="indent">
-                    Welcome to my Web Portfolio!, Hi! My name is Jhon Melvin. 
-                    I'm a Computer Engineering Technology student of
-                    Polytechnic University of the Philippines Sta Mesa.
-                </p>
-                <br>
-                <p class="indent">I'm a self-taught developer. I love building things from scratch.</p>
-                <br>
-                <li class="view-btn"><a href="#projects"><h3>View Projects</h3></a></li>
-            </div>
-            <div class="intro-right">
-                <img class="logo" src="images/logo.png" alt="picture ko">
-            </div>
-        </header>
-        <!-- Header End -->
-        <!-- Skill Start -->
-        <section class="skill" id="skillset">
-            <h1>Skill Learned</h1>
-            <br>
-            <hr>
-            <div class="col">
-                <div class="row">
-                    <h2>Front-End</h2>
-                    <img class="skills" src="images/front.png" alt="">
-                    <p>HTML, CSS, JavaScript, Bootstrap, JQuery</p>
-                </div>
-                <div class="row">
-                    <h2>Back-End</h2>
-                    <img class="skills" src="images/back.png" alt="">
-                    <p>PHP, MySQL</p>
-                </div>
-                <div class="row">
-                    <h2>Tools</h2>
-                    <img class="skills" src="images/tools.png" alt="">
-                    <p>MySQL Workbench, Visual Studio Code, Apache Netbeans, GIt Bash, Github,</p>
-                </div>
-            </div>
-            <hr>
-        </section>
-        <!-- Skill End -->
-        <!-- Project Start -->
-        <section class="projects" id="projects">
-            
-        </section>
-        <!-- Project End -->
-        <section></section>
-        <section></section>
-    </main>
-    <footer>
-        <h1>Jhon Melvin Dolot</h1>
-        <h2>Future Full Stack Web Developer</h2>
-        <p>Hi! My name is Melvin. I love building things from scratch</p>
-    </footer>
+        <!-- Main Content End -->
+    </div>
+    <!-- Main Container End -->
 </body>
-
 </html>
