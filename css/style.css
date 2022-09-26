@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-:root{
+:root {
     --bg-yellow: #ffa31a;
-    --bg-gray: 	#808080;
+    --bg-gray: #808080;
     --bg-darkgray: #292929;
     --bg-black: #1b1b1b;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,68 +15,70 @@
     text-decoration: none;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     line-height: 1.5;
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
 }
 
-::before, ::after{
+::before,
+::after {
     box-sizing: border-box;
 }
 
-ul{
+ul {
     list-style-type: none;
 }
 
-section{
+section {
     min-height: 100vh;
     display: block;
     padding: 0 30px;
     opacity: 1;
+    background-color: whitesmoke;
 }
 
-.padd-15{
+.padd-15 {
     padding: 0 10px;
 }
 
-.hidden{
-/*     display: none !important; */
+.hidden {
+    /* display: none !important; */
 }
 
-.main-content{
+.main-content {
     padding-left: 270px;
 }
 
-.container{
+.container {
     max-width: 1100px;
     width: 100%;
     margin: auto;
 }
 
-.container{
+.container {
     padding-top: 60px;
     padding-bottom: 70px;
 }
 
-.section-title{
+.section-title {
     flex: 0 0 100%;
     max-width: 100%;
     margin-bottom: 60px;
 }
 
-.section-title h2{
+.section-title h2 {
     font-size: 40px;
     color: black;
     font-weight: 700;
     position: relative;
 }
 
-.section-title h2::before{
+.section-title h2::before {
     content: "";
     height: 4px;
     width: 50px;
@@ -86,7 +88,7 @@ section{
     left: 0;
 }
 
-.section-title h2::after{
+.section-title h2::after {
     content: "";
     height: 4px;
     width: 25px;
@@ -97,14 +99,14 @@ section{
     margin-top: 8px;
 }
 
-.row{
+.row {
     display: flex;
     flex-wrap: wrap;
     margin: 0 -15px;
     position: relative;
 }
 
-.hire-btn{
+.hire-btn {
     font-size: 16px;
     font-weight: 500;
     padding: 12px 35px;
@@ -117,18 +119,18 @@ section{
     transition: all 0.5s ease;
 }
 
-.hire-btn:hover{
+.hire-btn:hover {
     transform: scale(1.05);
     background: #808080;
     color: black;
 }
 
-.shadow-dark{
+.shadow-dark {
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
 
 /* Navigation Section Start */
-aside{
+aside {
     background: white;
     color: black;
     width: 270px;
@@ -144,7 +146,7 @@ aside{
     padding: 30px;
 }
 
-.logo{
+.logo {
     position: absolute;
     top: 50px;
     font-size: 30px;
@@ -152,7 +154,7 @@ aside{
     border-radius: 10px;
 }
 
-.logo a{
+.logo a {
     font-weight: 700;
     border-radius: 10px;
     color: black;
@@ -162,12 +164,12 @@ aside{
     position: relative;
 }
 
-.logo a span{
+.logo a span {
     font-family: 'Times New Roman', Times, serif;
     font-size: 40px;
 }
 
-.logo a::before{
+.logo a::before {
     content: "";
     position: absolute;
     width: 20px;
@@ -177,7 +179,8 @@ aside{
     bottom: 0;
     left: 0;
 }
-.logo a::after{
+
+.logo a::after {
     content: "";
     position: absolute;
     width: 20px;
@@ -188,7 +191,7 @@ aside{
     right: 0;
 }
 
-.nav-toggler{
+.nav-toggler {
     height: 40px;
     width: 45px;
     border: 1px solid #808080;
@@ -203,7 +206,7 @@ aside{
     justify-content: center;
 }
 
-.nav-toggler span{
+.nav-toggler span {
     height: 2px;
     width: 18px;
     background: red;
@@ -211,7 +214,7 @@ aside{
     position: relative;
 }
 
-.nav-toggler span::before{
+.nav-toggler span::before {
     content: "";
     height: 2px;
     width: 18px;
@@ -220,7 +223,8 @@ aside{
     top: -6px;
     left: 0;
 }
-.nav-toggler span::after{
+
+.nav-toggler span::after {
     content: "";
     height: 2px;
     width: 18px;
@@ -230,11 +234,11 @@ aside{
     left: 0;
 }
 
-.nav{
+.nav {
     margin-top: 50px;
 }
 
-.nav li{
+.nav-list {
     margin-bottom: 20px;
     display: flex;
     text-align: center;
@@ -242,7 +246,7 @@ aside{
     color: black;
 }
 
-.nav a{
+.nav a {
     font-size: 16px;
     font-weight: 600;
     display: block;
@@ -250,61 +254,66 @@ aside{
     padding: 5px 15px;
 }
 
-.nav .active{
+.nav i {
+    margin-right: 15px;
+}
+
+.nav-list:hover {
+    background-color: whitesmoke;
+}
+
+.nav-list:hover a {
     color: red;
 }
 
-.nav i{
-    margin-right: 15px;
-}
 /* Navigation Section End */
 
 /* Home Start */
-.home{
+.home {
     color: black;
     display: flex;
     min-height: 100vh;
 }
 
-.home-info{
+.home-info {
     flex: 0 0 60%;
     max-width: 60%;
 }
 
-.hello{
+.hello {
     font-size: 28px;
     margin: 15px 0;
 }
 
-.hello span{
+.hello span {
     font-size: 30px;
     font-weight: 700;
     color: red;
 }
 
-h3.my-profession{
+h3.my-profession {
     font-size: 30px;
     margin: 15px 0;
 }
 
-.typing{
+.typing {
     color: #808080;
 }
 
-.home-info p{
+.home-info p {
     margin-bottom: 70px;
     font-size: 20px;
     color: black;
 }
 
-.home-img{
+.home-img {
     flex: 0 0 40%;
     max-width: 40%;
     text-align: center;
     position: relative;
 }
 
-.home-img::after{
+.home-img::after {
     content: "";
     position: absolute;
     height: 80px;
@@ -315,7 +324,7 @@ h3.my-profession{
     bottom: 10px;
 }
 
-.home-img::before{
+.home-img::before {
     content: "";
     position: absolute;
     height: 80px;
@@ -326,53 +335,54 @@ h3.my-profession{
     left: -5px;
 }
 
-.home-img img{
+.home-img img {
     height: 300px;
     margin: auto;
     border-radius: 5px;
 }
+
 /* Home End */
 
 /* About Start */
-.about-content{
+.about-content {
     flex: 0 0 100%;
     max-width: 100%;
 }
 
-.about-text{
+.about-text {
     flex: 0 0 100%;
     max-width: 100%;
 }
 
-.about-text h3{
+.about-text h3 {
     font-size: 24px;
     margin-bottom: 15px;
     font-weight: 700;
     color: black;
 }
 
-.about-text span{
+.about-text span {
     color: red;
 }
 
-.about-text p{
+.about-text p {
     font-size: 16px;
     line-height: 25px;
     color: black;
 }
 
-.personal-info{
+.personal-info {
     flex: 0 0 60%;
     max-width: 60%;
     margin-top: 40px;
 }
 
-.info-item{
+.info-item {
     flex: 0 0 50%;
     max-width: 50%;
 }
 
-.info-item p{
+.info-item p {
     font-weight: 600;
     padding: 10px 0;
     font-size: 16px;
@@ -380,35 +390,36 @@ h3.my-profession{
     border-bottom: 1px solid red;
 }
 
-.info-item p span, .info-item p a{
+.info-item p span,
+.info-item p a {
     font-weight: 400;
     color: gray;
     margin-left: 4px;
     display: inline-block;
 }
 
-.buttons{
+.buttons {
     margin-top: 30px;
 }
 
-.buttons .hire-btn{
+.buttons .hire-btn {
     margin-right: 15px;
     margin-top: 10px;
 }
 
-.skills{
+.skills {
     flex: 0 0 40%;
     max-width: 40%;
     margin-top: 40px;
     padding-left: 60px;
 }
 
-.skill-item{
+.skill-item {
     flex: 0 0 100%;
     max-width: 100%;
 }
 
-.skill-item h5{
+.skill-item h5 {
     line-height: 40px;
     font-weight: 600;
     font-size: 16px;
@@ -416,44 +427,46 @@ h3.my-profession{
     text-transform: capitalize;
 }
 
-.education{
-    flex: 0 0 50%;
+.education {
+    flex: 0 0 48%;
     max-width: 50%;
     margin-top: 30px;
+    margin-right: 20px;
 }
 
-.title{
+.title {
     font-size: 24px;
     margin-bottom: 30px;
     font-weight: 700;
     color: red;
 }
 
-.timeline-box{
+.timeline-box {
     flex: 0 0 100%;
     max-width: 100%;
 }
 
-.timeline{
-    background-color: whitesmoke;
+.timeline {
+    background-color: white;
+    height: 850px;
     padding: 30px 15px;
     border-radius: 10px;
     width: 100%;
     position: relative;
 }
 
-.timeline-item{
+.timeline-item {
     position: relative;
     padding-left: 37px;
     padding-bottom: 50px;
 
 }
 
-.timeline-item:last-child{
+.timeline-item:last-child {
     padding-bottom: 0;
 }
 
-.timeline-item::before{
+.timeline-item::before {
     content: "";
     width: 1px;
     position: absolute;
@@ -464,7 +477,7 @@ h3.my-profession{
     background-color: red;
 }
 
-.circle-dot{
+.circle-dot {
     position: absolute;
     left: 0;
     top: 0;
@@ -474,41 +487,42 @@ h3.my-profession{
     background-color: red;
 }
 
-.timeline-date{
+.timeline-date {
     font-weight: 400;
     font-size: 14px;
     margin-bottom: 12px;
     color: #292929;
 }
 
-.timeline-date i{
+.timeline-date i {
     margin-right: 5px;
     font-size: 20px;
 }
 
-.timeline-title{
+.timeline-title {
     font-weight: 700;
     font-size: 18px;
     text-transform: capitalize;
 }
 
-.timeline-text{
+.timeline-text {
     line-height: 25px;
     font-size: 16px;
     text-align: justify;
     color: gray;
 }
+
 /* About End */
 
 /* Learning Roadmap Start */
-.learn-map-item{
+.learn-map-item {
     margin-bottom: 30px;
     flex: 0 0 33.33%;
     max-width: 33.33%;
 }
 
-.learn-map-item-inner{
-    background-color: whitesmoke;
+.learn-map-item-inner {
+    background-color: white;
     border-radius: 10px;
     padding: 30px 15px;
     text-align: center;
@@ -516,11 +530,11 @@ h3.my-profession{
     height: 290px;
 }
 
-.learn-map-item-inner:hover{
+.learn-map-item-inner:hover {
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
 
-.icon{
+.icon {
     height: 60px;
     width: 60px;
     border-radius: 50%;
@@ -529,32 +543,168 @@ h3.my-profession{
     transition: all 0.5s ease;
 }
 
-.icon i{
+.icon i {
     font-size: 40px;
     line-height: 60px;
     color: red;
     transition: all 0.5s ease;
 }
 
-.learn-map-item-inner:hover .icon{
+.learn-map-item-inner:hover .icon {
     background: gray;
 }
 
-.learn-map-item-inner:hover .icon i{
+.learn-map-item-inner:hover .icon i {
     font-size: 50px;
     color: black;
 }
 
-.learn-map-item-inner h4{
+.learn-map-item-inner h4 {
     font-size: 18px;
     margin-bottom: 15px;
     font-weight: 700;
     text-transform: capitalize;
 }
 
-.learn-map-item-inner p{
+.learn-map-item-inner p {
     font-size: 16px;
     line-height: 25px;
     color: gray;
 }
+
 /* Learning Roadmap End */
+
+/* Project Start */
+.portfolio .container {
+    padding-bottom: 40px;
+}
+
+.portfolio-heading {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.portfolio-heading h2 {
+    color: red;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.portfolio-item {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    margin-bottom: 30px;
+}
+
+.portfolio-item-inner {
+    border: 6px solid gray;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.portfolio-img img {
+    width: 100%;
+    display: block;
+}
+
+/* Project End */
+
+/* Contact Start */
+.contact-title {
+    color: red;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.contact-sub-title {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 60px;
+}
+
+.contact-info-item {
+    flex: 0 0 25%;
+    max-width: 25%;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.contact-info-item .icon {
+    display: inline-block;
+}
+
+.contact-info-item .icon i {
+    font-size: 25px;
+    color: red;
+}
+
+.contact-info-item h4 {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: 15px 0 5px;
+}
+
+.contact-info-item p {
+    color: gray;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+}
+
+.contact-form {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.form-item {
+    margin-bottom: 30px;
+}
+
+.form-control {
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid red;
+    padding: 10px 25px;
+    font-size: 16px;
+    transition: all 0.5s ease;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+
+textarea.form-control {
+    height: 140px;
+}
+
+/* Contact End */
+
+/* Responsive CSS Start */
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+/* Responsive CSS End */
