@@ -428,10 +428,9 @@ h3.my-profession {
 }
 
 .education {
-    flex: 0 0 48%;
-    max-width: 50%;
+    flex: 0 0 45%;
+    max-width: 45%;
     margin-top: 30px;
-    margin-right: 20px;
 }
 
 .title {
@@ -446,9 +445,9 @@ h3.my-profession {
     max-width: 100%;
 }
 
-.timeline {
+.timeline-1,
+.timeline-2 {
     background-color: white;
-    height: 850px;
     padding: 30px 15px;
     border-radius: 10px;
     width: 100%;
@@ -695,16 +694,70 @@ textarea.form-control {
 
 /* Responsive CSS Start */
 
-/* Small devices (landscape phones, 576px and up) */
-@media screen and (min-width: 576px) {}
+/* Small devices (landscape phones, 768px and below) */
+@media (max-width: 767px) {
+    .timeline-box {
+        height: 1200px;
+    }
+}
 
 /* Medium devices (tablets, 768px and up) */
-@media screen and (min-width: 768px) {}
+@media (max-width: 768px) {
+
+    .contact-info-item,
+    .portfolio-item,
+    .learn-map-item,
+    .education,
+    .skills,
+    .personal-info {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .timeline-box {
+        height: 75rem;
+    }
+}
 
 /* Large devices (desktops, 992px and up) */
-@media screen and (min-width: 992px) {}
+@media (max-width: 992px) {
+
+    .home-info,
+    .education {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .home-img {
+        display: none;
+    }
+
+    .learn-map-item,
+    .portfolio-item,
+    .contact-info-item {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .timeline-1 {
+        height: 950px;
+    }
+}
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}
+@media (max-width: 1200px) {
+    aside {
+        left: -270px;
+    }
+
+    .main-content {
+        padding-left: 0;
+    }
+
+    .info-item span {
+        display: block;
+        margin-left: 0;
+    }
+}
 
 /* Responsive CSS End */
