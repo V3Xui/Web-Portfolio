@@ -1,156 +1,136 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
-:root {
-    --bg-yellow: #ffa31a;
-    --bg-gray: #808080;
-    --bg-darkgray: #292929;
-    --bg-black: #1b1b1b;
-}
-
+/* Global CSS Start */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: none;
     text-decoration: none;
+    list-style: none;
+    color: black;
+    text-transform: uppercase;
 }
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
-    background-color: var(--bg-black);
-}
-
-ul {
-    list-style-type: none;
+    background: whitesmoke;
+    height: 100vh;
 }
 
 section {
     min-height: 100vh;
-    display: block;
     opacity: 1;
-    background-color: var(--bg-gray);
-    padding: 100px 0;
-    margin: 0 80px;
-}
-
-a {
-    color: white;
+    padding: 100px 50px 50px 50px;
 }
 
 .container {
-    max-width: 1100px;
+    padding: 20px;
     width: 100%;
-    margin: auto;
-    padding-top: 60px;
-    padding-bottom: 10px;
-}
-
-.section-title {
-    flex: 0 0 100%;
-    max-width: 100%;
-    margin-bottom: 20px;
-}
-
-.section-title h2 {
-    font-size: 40px;
-    color: black;
-    font-weight: 700;
-    position: relative;
-}
-
-.section-title h2::before {
-    content: "";
-    height: 4px;
-    width: 50px;
-    background-color: var(--bg-darkgray);
-    position: absolute;
-    top: 100%;
-    left: 0;
-}
-
-.section-title h2::after {
-    content: "";
-    height: 4px;
-    width: 25px;
-    background-color: var(--bg-darkgray);
-    position: absolute;
-    top: 100%;
-    left: 0;
-    margin-top: 8px;
+    background-color: white;
+    border: 1px solid gray;
 }
 
 .row {
+    padding: 10px;
+}
+
+.hire-btn {
+    font-size: 25px;
+    font-weight: 500;
+    color: black;
+    display: inline-block;
+    white-space: nowrap;
+    border: none;
+    transition: all 0.5s ease;
+    padding: 10px;
+    margin: 0 10px;
+    border-bottom: 2px solid black;
+}
+
+.hire-btn:hover {
+    border-bottom: 2px solid red;
+    background-color: #E2E8F0;
+}
+
+.special-row {
     display: flex;
     flex-wrap: wrap;
     margin: 0 -15px;
     position: relative;
 }
 
-.hire-btn {
-    font-size: 16px;
-    font-weight: 500;
-    padding: 12px 35px;
-    background: var(--bg-black);
-    color: white;
-    display: inline-block;
-    white-space: nowrap;
-    border: none;
-    border-radius: 40px;
-    transition: all 0.5s ease;
+/* Global CSS End */
+
+/* Master Head Start */
+.masterHead {
+    border-bottom: 1px solid #E2E8F0;
 }
 
-.hire-btn:hover {
-    transform: scale(1.05);
-    background: var(--bg-darkgray);
-    color: white;
-}
-
-/* Header Start */
-.master-head {
-    width: 98%;
-    background: var(--bg-darkgray);
-    margin: 10px;
+.navbar {
+    background-color: gainsboro;
     position: fixed;
-    z-index: 10;
-}
-
-.avatar {
-    width: 35px;
-    border-radius: 5px;
-}
-
-.header-left {
-    width: 48%;
-    margin: 10px;
-    float: left;
-    padding: 10px;
-}
-
-.header-right {
-    width: 48%;
-    margin: 10px;
-    float: right;
-    padding: 10px;
-}
-
-.nav {
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
     display: flex;
-    justify-content: center;
-    align-self: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
 
-.nav-list {
-    margin: 0 50px;
+.menuBtn {
+    display: none;
 }
 
-/* Header End */
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin: 10px;
+}
+
+.nav-link {
+    font-size: 20px;
+    font-weight: 100;
+    color: #475569;
+    padding: 0 10px;
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid red;
+}
+
+.nav-logo {
+    font-size: 20px;
+}
+
+/* Master Head End */
 
 /* Landing Page Start */
+.column {
+    float: left;
+    width: 50%;
+    padding: 20px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.cover-img {
+    width: 200px;
+    margin-left: 150px;
+}
 
 .home {
     color: black;
@@ -159,28 +139,26 @@ a {
 }
 
 .hello {
-    font-size: 28px;
-    margin: 15px 0;
+    font-size: 20px;
 }
 
 .hello span {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 700;
     color: white;
 }
 
 h3.my-hobby {
     font-size: 30px;
-    margin: 15px 0;
 }
 
 .typing {
-    color: var(--bg-darkgray);
+    color: red;
 }
 
 .home-info {
     text-align: justify;
-    padding: 100px;
+    padding: 50px;
 }
 
 .home-info p {
@@ -189,20 +167,9 @@ h3.my-hobby {
     color: black;
 }
 
-.home-img img {
-    height: 300px;
-    margin: auto;
-    border-radius: 5px;
-}
-
 /* Landing Page End */
 
-/* About Start */
-.about-content {
-    flex: 0 0 100%;
-    max-width: 100%;
-}
-
+/* About Page Start */
 .about-text {
     flex: 0 0 100%;
     max-width: 100%;
@@ -217,7 +184,7 @@ h3.my-hobby {
 }
 
 .about-text span {
-    color: white;
+    color: black;
 }
 
 .about-text p {
@@ -230,8 +197,6 @@ h3.my-hobby {
 .personal-info {
     flex: 0 0 50%;
     max-width: 50%;
-    margin-top: 40px;
-    margin-left: 50px;
 }
 
 .info-item {
@@ -243,158 +208,87 @@ h3.my-hobby {
     font-weight: 600;
     padding: 10px 0;
     font-size: 16px;
-    color: white;
-    border-bottom: 1px solid var(--bg-darkgray);
+    color: black;
+    border-bottom: 1px solid red;
 }
 
 .info-item p span,
 .info-item p a {
     font-weight: 400;
-    color: white;
+    color: black;
     margin-left: 4px;
     display: inline-block;
 }
 
-.buttons {
-    margin-top: 30px;
-}
-
 .buttons .hire-btn {
-    margin-right: 15px;
-    margin-top: 10px;
+    margin-right: 10px;
 }
 
 .skills {
     flex: 0 0 40%;
     max-width: 40%;
-    margin-top: 40px;
     padding-left: 60px;
 }
 
 .skill-item {
     flex: 0 0 100%;
     max-width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid red;
 }
 
 .skill-item h5 {
     line-height: 40px;
     font-weight: 600;
     font-size: 16px;
-    color: white;
+    color: black;
     text-transform: capitalize;
 }
 
-.education {
-    flex: 0 0 45%;
-    max-width: 45%;
-    margin: 30px;
-    float: left;
-    background-color: var(--bg-darkgray);
-    height: 500px;
-    padding-top: 10px;
-    border-radius: 10px;
-}
-
-.certification {
-    flex: 0 0 45%;
-    max-width: 45%;
-    margin-top: 30px;
-    float: right;
-    background-color: var(--bg-darkgray);
-    height: 500px;
-    padding-top: 10px;
-    border-radius: 10px;
-}
-
-.title {
-    font-size: 24px;
-    margin-bottom: 30px;
-    font-weight: 700;
-    color: white;
-    margin-left: 20px;
-}
-
-.timeline-box {
-    flex: 0 0 100%;
-    max-width: 100%;
-}
-
-.timeline-item {
-    width: 90%;
-    position: relative;
-    margin-left: 25px;
-    padding-left: 20px;
-    display: block;
-}
-
-.timeline-item::before {
-    content: "";
-    width: 1px;
-    position: absolute;
-    height: 100%;
-    left: 7px;
-    top: 0;
-    bottom: 0;
-    background-color: white;
-}
-
-.circle-dot {
-    position: absolute;
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
     left: 0;
     top: 0;
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    background-color: white;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 50px;
 }
 
-.timeline-date {
-    font-weight: 400;
-    font-size: 14px;
-    margin-bottom: 12px;
-    color: white;
+.modal-content {
+    background-color: #fefefe;
+    margin: 5%;
+    padding: 30px;
+    border: 1px solid #888;
+    width: 90%;
+    height: 80%;
 }
 
-.timeline-date i {
-    margin-right: 5px;
-    font-size: 20px;
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
 }
 
-.timeline-title {
-    font-weight: 700;
-    font-size: 18px;
-    text-transform: capitalize;
-    color: white;
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-.timeline-text {
-    line-height: 25px;
-    font-size: 16px;
-    text-align: justify;
-    color: white;
+.buttons-1 {
+    display: flex;
 }
 
-/* About End */
-
-/* Project Start */
-
-.card {
-    background-color: var(--bg-yellow);
-    margin: 30px;
-    height: 382px;
-}
-
-.card-container {
-    position: absolute;
-    padding: 2px 50px;
-}
-
-/* Project End */
-
-/* Contact Start */
-
+/* About Page End */
+/* Contact Page Start */
 .contact-title {
-    color: white;
+    color: black;
     text-align: center;
     font-size: 25px;
     margin: 20px 0;
@@ -404,15 +298,14 @@ h3.my-hobby {
     text-align: center;
     font-size: 15px;
     margin-bottom: 60px;
-    color: white;
+    color: black;
 }
 
 .contact-info-item {
     flex: 0 0 25%;
     max-width: 25%;
     text-align: center;
-    margin-bottom: 60px;
-    color: white;
+    color: black;
 }
 
 .contact-info-item .icon {
@@ -421,7 +314,6 @@ h3.my-hobby {
 
 .contact-info-item .icon i {
     font-size: 25px;
-    color: var(--bg-black);
 }
 
 .contact-info-item h4 {
@@ -432,7 +324,7 @@ h3.my-hobby {
 }
 
 .contact-info-item p {
-    color: white;
+    color: black;
     font-size: 16px;
     line-height: 25px;
     font-weight: 400;
@@ -455,158 +347,156 @@ h3.my-hobby {
     margin-left: 20px;
 }
 
-.form-item {
-    margin-bottom: 30px;
+.flex {
+    display: flex;
 }
 
-.form-control {
-    width: 100%;
-    height: 50px;
-    border-radius: 25px;
-    border: 1px solid var(--bg-black);
-    padding: 10px 25px;
-    font-size: 16px;
-    transition: all 0.5s ease;
+.a-tag {
+    padding: 5px;
+    border-bottom: 1px solid red;
 }
 
-.form-control:focus {
-    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
-}
-
-textarea.form-control {
-    height: 140px;
-}
-
-.a-tag{
-    color: blue;
-}
-
-/* Contact End */
-
-/* Footer Start */
+/* Contact Page End */
 
 footer{
     margin: 10px;
     padding: 10px;
     display: flex;
     justify-content: center;
-    color: white;
+    color: black;
 }
 
-/* Footer End */
 
-/* Responisive Web Start*/
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    body {
-        overflow-x: hidden;
-    }
-
-    .master-head {
-        display: block;
-        align-items: center;
-        justify-content: center;
-        top: 0;
-        left: 0;
-        width: 95%;
-    }
-
-    .header-left {
-        width: 95%;
-        text-align: center;
-    }
-
-    .header-right {
-        width: 95%;
-        text-align: center;
-    }
-
-    .nav-list {
-        margin: 0 10px;
-    }
+@media only screen and (max-width: 768px) {
 
     section {
-        max-width: 98%;
-        margin: 0;
+        padding: 80px 0 0 0;
+    }
+
+    .hire-btn {
+        font-size: 20px;
+    }
+
+    .container {
         padding: 0;
     }
 
-    .home-info {
-        width: 80%;
-        padding: 0;
-    }
-
-    .row {
-        width: 98%;
-        margin: 0 10px;
-    }
-
-    .home-info p {
-        margin-bottom: 10px;
-    }
-
-    .info-item {
-        padding: 10px;
-    }
-
-    .skills {
+    /* Master Head Start */
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 90%;
+        border-radius: 10px;
         text-align: center;
-        padding-left: 0;
-        margin-left: 80px;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
     }
 
-    .education {
-        max-width: 100%;
-        margin: 0;
-        padding: 40px;
-        height: 750px;
+    .nav-menu.active {
+        left: 0;
+        margin-left: 19px;
     }
 
-    .certification {
-        max-width: 100%;
-        margin: 10px 0;
-        padding: 71px;
-        height: 750px;
-        float: left;
+    .menuBtn {
+        display: block;
+        cursor: pointer;
     }
 
-    .timeline-item {
+    .menuBtn box-icon:last-child {
+        display: none;
+    }
+
+    .menuBtn.active box-icon:first-child {
+        display: none;
+    }
+
+    .menuBtn.active box-icon:last-child {
+        display: block;
+    }
+
+    .menuBtn .box-icon {
+        font-size: 30px;
+    }
+
+    .menuBtn .box-icon.hidden {
+        display: none;
+    }
+
+    .menuBtn .box-icon:not(.hidden) {
+        display: block;
+    }
+
+    .menuBtn.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menuBtn.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .menuBtn.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    /* Master Head End */
+
+    /* Landing Page Start */
+    .column {
         width: 100%;
     }
 
-    .card {
-        margin: 10px;
+    .home-info {
+        padding: 0;
     }
 
-    .col-6{
-        flex: 0 0 43%;
-        max-width: 43%;
+    .cover-img {
+        width: 100px;
+        margin-left: 90px;
     }
 
-    .col-12{
-        flex: 0 0 90%;
+    /* Landing Page End */
+
+    /* About Page Start */
+    .info-item {
         max-width: 90%;
     }
 
-    .contact-info-item {
-        flex: 0 0 40%;
-        max-width: 40%;
-        margin: 15px;
+    .personal-info {
+        max-width: 500px;
+        margin-left: 0;
     }
 
+    .buttons {
+        margin-top: 0;
+    }
+
+    .buttons-1 {
+        display: block;
+    }
+
+    .skills {
+        max-width: 90%;
+    }
+
+    .modal-content {
+        width: 100%;
+    }
+
+    /* About Page End */
+
+    /* Contact Page Start */
+    .flex {
+        display: grid;
+    }
+
+    .contact-info-item {
+        margin-left: 60px;
+        width: 900px;
+        height: 140px;
+    }
+
+    /* Contact Page End */
 }
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
-
-/* Responisive Web End*/
