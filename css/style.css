@@ -70,6 +70,10 @@ section {
     border-bottom: 1px solid #E2E8F0;
 }
 
+.nav-img {
+    width: 100px;
+}
+
 .navbar {
     background-color: gainsboro;
     position: fixed;
