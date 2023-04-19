@@ -132,8 +132,9 @@ section {
 }
 
 .cover-img {
-    width: 200px;
-    margin-left: 150px;
+    width: 300px;
+    margin-left: 100px;
+    margin-top: 50px;
 }
 
 .home {
@@ -290,6 +291,70 @@ h3.my-hobby {
 }
 
 /* About Page End */
+
+/* Project Page Start */
+.enclosure {
+    display: flex;
+    float: left;
+    margin-left: 50px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    max-width: 300px;
+    overflow: hidden;
+}
+
+.carousel {
+    position: relative;
+    width: 300px;
+    height: 290px;
+}
+
+.slides img {
+    display: none;
+    max-width: 100%;
+    height: auto;
+}
+
+.slides img:first-child {
+    display: block;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.card-body {
+    padding: 10px;
+}
+
+/* Project Page End */
+
 /* Contact Page Start */
 .contact-title {
     color: black;
@@ -362,7 +427,7 @@ h3.my-hobby {
 
 /* Contact Page End */
 
-footer{
+footer {
     margin: 10px;
     padding: 10px;
     display: flex;
@@ -402,6 +467,16 @@ footer{
     .nav-menu.active {
         left: 0;
         margin-left: 19px;
+    }
+
+    .nav-item {
+        padding: 10px;
+        display: flex;
+    }
+
+    .nav-link {
+        border-bottom: 1px solid red;
+        margin: 5px;
     }
 
     .menuBtn {
@@ -448,6 +523,10 @@ footer{
     /* Master Head End */
 
     /* Landing Page Start */
+    .landing-page {
+        margin-top: 80px;
+    }
+
     .column {
         width: 100%;
     }
@@ -457,8 +536,7 @@ footer{
     }
 
     .cover-img {
-        width: 100px;
-        margin-left: 90px;
+        display: none;
     }
 
     /* Landing Page End */
@@ -503,4 +581,8 @@ footer{
     }
 
     /* Contact Page End */
+
+    .enclosure {
+        margin-left: 15px;
+    }
 }
