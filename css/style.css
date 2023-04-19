@@ -565,6 +565,7 @@ footer {
 
     .modal-content {
         width: 100%;
+        margin-left: -2px;
     }
 
     /* About Page End */
